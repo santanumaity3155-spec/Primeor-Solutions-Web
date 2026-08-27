@@ -1,0 +1,156 @@
+/* =========================================
+   Nexora Solutions — Custom Styles
+   Level 2 Task 1: Frontend Frameworks
+   ========================================= */
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to top, #ffffff, transparent);
+    pointer-events: none;
+}
+
+.hero-img {
+    max-height: 380px;
+    object-fit: cover;
+}
+
+/* ---------- Section Titles ---------- */
+.section-title {
+    color: #1a1a2e;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #0dcaf0;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ---------- Solution Cards ---------- */
+.solution-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.solution-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.solution-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* ---------- Service Cards ---------- */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    border-left: 4px solid #0dcaf0 !important;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #0dcaf0, #0aa2c8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* ---------- Featured Card ---------- */
+.card-img-top {
+    height: 260px;
+    object-fit: cover;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(33, 37, 41, 0.95) !important;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+/* ---------- Contact Section ---------- */
+#contact {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #111 !important;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 991.98px) {
+    .hero-section {
+        min-height: auto;
+        padding: 120px 0 80px;
+    }
+
+    .hero-section::after {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding: 90px 0 40px;
+    }
+
+    .solution-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .solution-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}
