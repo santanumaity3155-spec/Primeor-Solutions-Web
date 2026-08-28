@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualScape — Image Showcase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">VisualScape</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#slideshow" class="nav-link">Slideshow</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="intro">
+            <div class="container">
+                <h1>Explore the Visual World</h1>
+                <p>Discover a curated collection of landscapes and moments through an interactive image gallery and automatic slideshow.</p>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Image Gallery</h2>
+                <p class="section-subtitle">Click any thumbnail to view the full image</p>
+                <div class="gallery-grid">
+                    <a href="#img1" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-1.jpg" alt="Majestic mountain landscape reflected in a calm alpine lake" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img2" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-2.jpg" alt="Misty forest valley at dawn with soft morning light" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img3" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-3.jpg" alt="Sunlit path through dense green woodland" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img4" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-4.jpg" alt="Rolling green hills under a clear blue sky" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img5" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-5.jpg" alt="Vast aerial view of lush green forest canopy" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img6" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-6.jpg" alt="Serene landscape with clouds reflecting on water" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img7" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-7.jpg" alt="Tall waterfall cascading through tropical vegetation" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#img8" class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/nature-8.jpg" alt="Golden sunlight streaming over mountain meadow" loading="lazy">
+                            <div class="gallery-overlay">
+                                <span>View</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Overlays (CSS-only click-to-enlarge) -->
+        <div class="lightbox" id="img1">
+            <div class="lightbox-content">
+                <img src="images/nature-1.jpg" alt="Majestic mountain landscape reflected in a calm alpine lake">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img2">
+            <div class="lightbox-content">
+                <img src="images/nature-2.jpg" alt="Misty forest valley at dawn with soft morning light">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img3">
+            <div class="lightbox-content">
+                <img src="images/nature-3.jpg" alt="Sunlit path through dense green woodland">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img4">
+            <div class="lightbox-content">
+                <img src="images/nature-4.jpg" alt="Rolling green hills under a clear blue sky">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img5">
+            <div class="lightbox-content">
+                <img src="images/nature-5.jpg" alt="Vast aerial view of lush green forest canopy">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img6">
+            <div class="lightbox-content">
+                <img src="images/nature-6.jpg" alt="Serene landscape with clouds reflecting on water">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img7">
+            <div class="lightbox-content">
+                <img src="images/nature-7.jpg" alt="Tall waterfall cascading through tropical vegetation">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+        <div class="lightbox" id="img8">
+            <div class="lightbox-content">
+                <img src="images/nature-8.jpg" alt="Golden sunlight streaming over mountain meadow">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+            </div>
+        </div>
+
+        <!-- Automatic Slideshow Section -->
+        <section id="slideshow" class="slideshow-section">
+            <div class="container">
+                <h2 class="section-title">Automatic Slideshow</h2>
+                <p class="section-subtitle">Watch images transition automatically</p>
+                <div class="slideshow">
+                    <div class="slideshow-track">
+                        <div class="slide slide-1">
+                            <img src="images/nature-1.jpg" alt="Mountain landscape with alpine lake reflection">
+                        </div>
+                        <div class="slide slide-2">
+                            <img src="images/nature-2.jpg" alt="Misty forest valley at dawn">
+                        </div>
+                        <div class="slide slide-3">
+                            <img src="images/nature-3.jpg" alt="Sunlit forest path">
+                        </div>
+                        <div class="slide slide-4">
+                            <img src="images/nature-4.jpg" alt="Rolling green hills landscape">
+                        </div>
+                        <div class="slide slide-5">
+                            <img src="images/nature-5.jpg" alt="Aerial forest canopy view">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo">VisualScape</span>
+                <p>Curated landscapes and moments captured through the lens.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#slideshow">Slideshow</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>hello@visualscape.com</p>
+                <p>+1 (555) 987-6543</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VisualScape. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
